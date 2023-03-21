@@ -1,0 +1,9 @@
+.contactowo {
+    color:#00ffff;
+    cursor:pointer;
+    transition:all .2s ease-in-out
+}
+
+.contactowo:hover {
+    color:#00bebe
+}

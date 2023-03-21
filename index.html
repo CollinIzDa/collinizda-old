@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+
+        <!--    Other    -->
+        <meta charset="UTF-8">
+        <link rel="icon" href="assets/img/besen.png">
+        <meta content="assets/img/besen.png" property="og:image" />
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <meta content="#00ffff" data-react-helmet="true" name="theme-color" />
+        <meta content="CollinIzDa's Website" name="description">
+        <meta content="CollinIzDa's Website" property="og:description" />
+        <meta content="CollinIzDa 👑" property="og:title" />
+        <meta content="https://collinizda.com" property="og:url" />
+        <!--    Other End    -->
+
+
+        <!--    Title And Viewport    -->
+        <title>CollinIzDa - Home</title>
+        <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+        <!--    Title And Viewport End    -->
+
+
+        <!--    CSS    -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/popuptexte.css">
+        <link rel="stylesheet" href="assets/css/creativa-popup.css">
+        <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+        <link rel='stylesheet prefetch' href='maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <!--    CSS End    -->
+
+
+        <!--    Javascript    -->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/typed.js"></script>
+        <script src="assets/js/popups.js"></script>
+        <script src="assets/js/particles.js"></script>
+        <script src="assets/js/F12-disable.js"></script>
+        <script src="assets/js/creativa-popup.js"></script>
+        <script src="https://kit.fontawesome.com/d5f0c557a0.js" crossorigin="anonymous"></script>
+        <!--    Javascript    -->
+
+
+        <!--    No Javascript    -->
+        <noscript>
+            <style>html{display:none;}</style>
+            <meta http-equiv="refresh" content="0.0;url=https://collinizda.com/javascript-error">
+        </noscript>
+        <!--    No Javascript End    -->
+
+        <style>
+            /* ---- particles.js container ---- */
+
+            #particles-js{
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                /*background-color: rgb(0, 0, 0);*/
+                position: fixed;
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body oncontextmenu="return false;" onkeydown="return false;" style="overflow: hidden">
+
+
+
+
+
+
+        
+        <!-- Video Background -->
+        <video id="izda-video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" style="opacity: .8;">
+            <source src="assets/vid/Animated Moon Wallpaper.mp4" type="video/mp4">
+        </video>
+        <!-- Video Background End -->
+
+        <div id="particles-js"></div>
+
+        <!-- The Main -->
+        <div class="izda-center">
+
+            <div class="main">
+                <!-- IzDa Branding logo -->
+                <div class="animated zoomIn">
+                    <div class="izda-brand">
+                        <h1 style="text-shadow: 2px 2px 8px #000000; text-align: center;" onclick="popupabout();" class="midlogo">Collin<font color="#00ffff" class="Namelol">Iz</font>Da</h1>
+                    </div>
+                </div>
+                <!-- IzDa Branding logo -->
+
+                <!-- Typed -->
+                <div class="animated fadeIn" style="animation-delay: 0.4s;">
+                    <div class="typed">
+                        <h2><span class="type"></span></h2>
+                    </div>
+                </div>
+                <!-- Typed End -->
+
+                <!-- Wrap (Buttons) -->
+                <div class="wrap">
+                    <div class="animated fadeInUpBig" style="animation-delay: 0.5s;">
+                        <a href="https://github.com/collinizda" target="_blank">
+                            <p class='button'>
+                                <i class="fa-brands fa-github"></i>
+                                Github
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="animated fadeInUpBig" style="animation-delay: 0.6s;">
+                        <a href="#" onclick="popupdiscord()">
+                            <p class='button'>
+                                <i class="fa-regular fa-comment"></i>
+                                Contact
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="animated fadeInUpBig" style="animation-delay: 0.7s;">
+                        <a href="https://izda.xyz" target="_blank">
+                            <p class='button'>
+                                <i class="fa-brands fa-discord"></i>
+                                IzDa Bot
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <!-- Wrap (Buttons) End -->
+            </div>
+        </div>
+        <!-- The Main End -->
+
+        <!-- Footer -->
+        <footer id="footer">
+            <span class="copyright">
+                <a href="imprint/">Copyright © 
+                    <script type="text/javascript">
+                        var year = new Date();document.write(year.getFullYear());
+                    </script>
+                    <b>CollinIzDa.com</b>
+                </a>
+            </span>
+        </footer>
+        <!-- Footer End -->
+
+        <!-- Typed SCRIPT -->
+        <script>
+            var typed = new Typed('.type', {
+                strings: [
+                    "I'm Collin and im a hobby developer",
+                    "How was your day?",
+                    "<font style='color: #00ffff;'>I love it to develop new things</font>"
+                        ],
+                typeSpeed: 69,
+                backSpeed: 30,
+                backDelay: 1500,
+                loop: true,
+                smartBackspace: true // Default value
+            });
+        </script>
+        <!-- Typed SCRIPT End -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+        <script>
+            gsap.from('#footer', {opacity: 0, duration: 0.3, delay:1.6, y: 30})
+        </script>
+    </body>
+</html>

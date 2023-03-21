@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CollinIzDa - Error</title>
+        <link href="../assets/img/besen.png" rel="icon" type="image/x-icon" />
+
+        <script src="../assets/js/F12-disable.js"></script>
+        <script src="https://kit.fontawesome.com/d5f0c557a0.js" crossorigin="anonymous"></script>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            html,
+            body {
+                display: grid;
+                height: 100%;
+                width: 100%;
+                place-items: center;
+                background-color: #17181C;
+                user-select: none;
+            }
+
+            .title {
+                text-align: center;
+            }
+
+            .title .errorr {
+                color: white;
+                font-size: 6rem;
+            }
+
+            .title .not {
+                color: white;
+                font-size: 2rem;
+            }
+            
+            .knopf {
+                font-family: Comfortaa;
+                border: none;
+                color: white;
+                padding: 16px 32px; 
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 25px;
+                margin-top: 22px;
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+                cursor: pointer;
+                border-radius: 12px;
+                max-width: 99%;
+                max-height: 99%;
+                align-self: center;
+                
+            }
+
+            .back {
+                background-image: linear-gradient(to right, #fbc2eb 0%, #00ffff 50%, #75b5ff 100%);
+                border-color: #00ffff;
+                background-size: 200% auto;
+                color: white;
+                transition: 0.5s;
+                
+            }
+            .back:hover {
+                background-position: right center;
+                color: white;
+                transition: 0.5s;
+            }
+        </style>
+    </head>
+
+    <body oncontextmenu="return false;" onkeydown="return false;">
+        <div class="title">
+            <h1 class="errorr">Error</h1>
+            <h1 class="not">Please enable Javascript, <br>to visit my page.</h1>
+            <a class="knopf back" href="https://collinizda.com/">
+                <i class="fa-solid fa-home"></i>
+                Home
+            </a>
+            <br>
+            <a class="knopf back" href="https://www.google.com/search?q=How+to+enable+javascript+in+my+browser" target="_blank">
+                <i class="fa-brands fa-google"></i>
+                Enable
+            </a>
+        </div>
+    </body>
+</html>

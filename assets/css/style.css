@@ -1,0 +1,276 @@
+/* Import our fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+@font-face { font-family: Font; src: url('../font/font.ttf'); }
+
+/* Root */
+:root {
+	--bg: #17181C;
+    --main-Color: #00ffff;
+}
+
+
+/* Body */
+body {
+    color: white;
+    background: #000000;
+    font-family: "Open Sans", sans-serif;
+    user-select: none;
+}
+/* Body End */
+
+
+/* Text Formatting and ohter stuff */
+h1 {
+	font-family: 'Comfortaa', sans-serif;
+    font-size: 6vw;
+    margin: 0;
+}
+
+p,span,a,li {
+    text-shadow:2px 2px 6px #000!important;
+    text-decoration:none;
+}
+
+h1>a {
+    transition: color 0.5s ease;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+  transition: 0.4s all;
+}
+
+a:hover {
+  color: var(--main-Color);
+  text-decoration: none;
+}
+
+b {
+  font-weight: 700;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    -user-drag: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Text Formatting and ohter stuff End */
+
+
+/* Pre loader */
+/* Maybe some content here soon... */
+/* Pre loader End */
+
+
+/* Video Background */
+#izda-video {
+    position: absolute;
+    z-index: -10000;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: blur(12px);
+}
+/* Video Background End */
+
+
+/* IzDa Center */
+.izda-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*border: solid 3px #ffffff;*/
+    padding: 4rem;
+    border-radius: 2rem;
+}
+
+.izda-center h1 {
+    font-weight: lighter;
+    font-size: 5.5rem;
+    margin-bottom: -.5rem !important;
+}
+
+.izda-center p {
+    font-weight: lighter;
+    font-size: 1rem;
+}
+/* IzDa Center End */
+
+
+/* izda-brand */
+.izda-brand {
+    margin-bottom: 2rem;
+}
+
+.izda-brand h1, p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.midlogo {
+    font-size: 6.9rem;
+    transition: all .25s cubic-bezier(0.42, 0, 0.51, 1.87);
+}
+  
+.midlogo:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+  
+.Namelol {
+    transition: 0.2s all;
+}
+  
+.Namelol:hover {
+    cursor: pointer;
+    color: #00aeff;
+}
+/* izda-brand End */
+
+
+/* Typed */
+.typed {
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.typed span {
+    font-weight: lighter;
+}
+/* Typed End */
+
+
+/* Blur */
+.blur {
+    backdrop-filter: blur(.3rem);
+    -webkit-backdrop-filter: blur(.3rem);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 2rem;
+}
+/* Blur End */
+
+
+/* Wrapper (Buttons) */
+.wrap {
+    width: calc((225px * 3) + (20px * 4) + 2px);
+    height: 60px;
+}
+.wrap .button {
+    display: block;
+    float: left;
+    width: 210px;
+    text-align: center;
+    cursor: pointer;
+    margin: 2rem .6rem;
+    border: 3px solid white;
+    padding: .6rem .5rem .7rem .5rem;
+    text-decoration: none;
+    color: white;
+    transition: all .4s cubic-bezier(0.42, 0, 0.24, 1.87);
+    border-radius: 50px;
+    font-size: 1.3rem;
+}
+
+.wrap .button a {
+    color: black;
+    text-decoration: none;
+}
+.wrap .button .fa {
+    margin-right: 6px;
+}
+.wrap .button:hover {
+    transform: scale(1.1);
+    background: var(--main-Color);
+    color: white;
+    border-color: var(--main-Color);
+}
+
+.wrap .button:active {
+    transform: scale(1.05);
+    background: var(--main-Color);
+    color: white;
+    border-color: var(--main-Color);
+}
+/* Wrapper (Buttons) End */
+
+
+/* Footer */
+#footer {
+    opacity: 0.5;
+    padding-bottom: 5px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+/* Footer End */
+
+
+/* For Handy und Desktop */
+@media only screen and (max-width: 742px) {
+    .wrap {
+        width: auto;
+        height: auto;
+        transform: translateX(104px);
+    }
+    .wrap .button {
+        margin-top: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 452px) {
+    .izda-center .midlogo {
+        font-size: 4.20rem;
+    }
+    .wrap {
+        transform: translate(50px);
+    }
+}
+
+@media only screen and (max-width: 346px) {
+    .izda-center .midlogo {
+        font-size: 3.20rem;
+    }
+    .wrap {
+        transform: translate(8px);
+    }
+}
+
+@media only screen and (max-width: 719px) {
+    .wrap .button {
+        display: block;
+        float: left;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+        /*transform: translateX(15px);*/
+        padding: .6rem .5rem .7rem .5rem;
+    }
+    h1 {
+        font-size: 12vw;
+    }
+}
+/* For Handy und Desktop End */
